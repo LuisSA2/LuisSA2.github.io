@@ -6,7 +6,6 @@
     <title>ByteFix Streme - Servicios Tecnológicos</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Fallback icons using emojis */
         .fa-certificate::before { content: "🏆"; }
         .fa-microchip::before { content: "💻"; }
         .fa-cogs::before { content: "⚙️"; }
@@ -50,8 +49,6 @@
         .orbitron {
             font-family: 'Courier New', monospace;
         }
-        
-        /* Halloween Animated Background */
         .halloween-bg {
             position: fixed;
             top: 0;
@@ -84,8 +81,6 @@
             0% { transform: translate(0, 0) rotate(0deg); }
             100% { transform: translate(40px, 40px) rotate(5deg); }
         }
-        
-        /* Header Styles */
         .hero-header {
             padding: 2rem 0;
             text-align: center;
@@ -124,8 +119,7 @@
             letter-spacing: 2px;
             font-style: italic;
         }
-        
-        /* Service Cards */
+
         .services-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -238,8 +232,6 @@
             margin-bottom: 1.5rem;
             text-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
         }
-        
-        /* Buttons */
         .btn {
             display: inline-block;
             padding: 0.8rem 2rem;
@@ -276,8 +268,6 @@
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
         }
-        
-        /* Footer */
         .footer {
             background: rgba(45, 10, 10, 0.9);
             backdrop-filter: blur(10px);
@@ -295,8 +285,6 @@
             color: var(--text-gray);
             font-size: 0.9rem;
         }
-        
-        /* Hidden Skeletons */
         .hidden-skeleton {
             position: absolute;
             font-size: 1.1rem;
@@ -350,8 +338,6 @@
             transform: rotate(-15deg);
             opacity: 0.6;
         }
-        
-        /* Responsive */
         @media (max-width: 768px) {
             .logo-text {
                 font-size: 2rem;
@@ -383,8 +369,6 @@
                 opacity: .5;
             }
         }
-        
-        /* Halloween Decorations */
         .halloween-decoration {
             position: fixed;
             font-size: 1.5rem;
@@ -450,8 +434,6 @@
             0%, 100% { transform: translateY(0px) scale(1); }
             50% { transform: translateY(-10px) scale(1.1); }
         }
-        
-        /* Bat animation */
         .bat {
             position: fixed;
             font-size: 2rem;
@@ -488,30 +470,19 @@
 <body>
     <div class="halloween-bg"></div>
     <div class="spiderweb-grid"></div>
-    
-    <!-- Hidden Skeletons will be added dynamically -->
-    
-    <!-- Halloween Decorations -->
     <div class="halloween-decoration ghost-1">👻</div>
     <div class="halloween-decoration ghost-2">👻</div>
     <div class="halloween-decoration witch-hat">🧙</div>
     <div class="halloween-decoration spider">🕷️</div>
     <div class="halloween-decoration candy">🍬</div>
-    
-    <!-- Flying Bat -->
     <div class="bat">🦇</div>
-    
-    <!-- Header -->
     <header class="hero-header">
         <h1 class="logo-text orbitron">ByteFix Streme</h1>
         <p class="tagline">Soluciones Tecnológicas de Halloween<br>Encuentra los 5 esqeletos y Gana un Servicio gratis mira en la parte de abajo los pasos para ganar</p>
     </header>
-    
-    <!-- Main Content -->
     <main class="services-container">
         <h2 class="section-title orbitron">Nuestros Servicios</h2>
-        
-        <!-- Licencias de Software -->
+
         <section class="service-category">
             <h3 class="category-title">
                 <i class="fas fa-certificate category-icon"></i>
@@ -551,8 +522,7 @@
                 </div>
             </div>
         </section>
-        
-        <!-- Servicios de Hardware -->
+
         <section class="service-category">
             <h3 class="category-title">
                 <i class="fas fa-microchip category-icon"></i>
@@ -595,7 +565,6 @@
             </div>
         </section>
         
-        <!-- Otros Servicios -->
         <section class="service-category">
             <h3 class="category-title">
                 <i class="fas fa-cogs category-icon"></i>
@@ -627,7 +596,6 @@
         </section>
     </main>
     
-    <!-- Footer -->
     <footer class="footer">
         <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-social" target="_blank">
@@ -647,9 +615,7 @@
     </footer>
     
     <script>
-        // Add some interactive animations
         document.addEventListener('DOMContentLoaded', function() {
-            // Animate service cards on scroll
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
@@ -663,16 +629,12 @@
                     }
                 });
             }, observerOptions);
-            
-            // Initially hide cards
             document.querySelectorAll('.service-card').forEach(card => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(30px)';
                 card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                 observer.observe(card);
             });
-            
-            // Add hover effect to buttons
             document.querySelectorAll('.btn').forEach(button => {
                 button.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateY(-2px) scale(1.05)';
@@ -682,8 +644,6 @@
                     this.style.transform = 'translateY(0) scale(1)';
                 });
             });
-            
-            // Halloween background particles effect
             function createHalloweenParticle() {
                 const particle = document.createElement('div');
                 particle.style.position = 'fixed';
@@ -725,11 +685,8 @@
                     easing: 'ease-out'
                 }).onfinish = () => particle.remove();
             }
-            
-            // Create Halloween particles periodically
             setInterval(createHalloweenParticle, 600);
-            
-            // Skeleton click interactions
+
             let skeletonsFound = 0;
             document.querySelectorAll('.hidden-skeleton').forEach(skeleton => {
                 skeleton.addEventListener('click', function() {
@@ -737,19 +694,15 @@
                     this.style.transform = 'scale(2) rotate(360deg)';
                     this.style.opacity = '0';
                     this.style.filter = 'blur(0px)';
-                    
-                    // Create celebration effect
                     for(let i = 0; i < 15; i++) {
                         setTimeout(() => createHalloweenParticle(), i * 30);
                     }
-                    
-                    // Show message
                     if (skeletonsFound === 1) {
-                        showMessage('¡Primer esqueleto encontrado! 💀');
+                        showMessage('esqueleto encontrado! 💀');
                     } else if (skeletonsFound === 3) {
-                        showMessage('¡Mitad del camino! Sigue buscando 💀');
+                        showMessage('Sigue buscando 💀');
                     } else if (skeletonsFound === 5) {
-                        showMessage('¡Felicitaciones! Encontraste todos los esqueletos! 💀🎃');
+                        showMessage('¡Felicitaciones! Encontraste todos los esqueletos!Ve a nuestras redes sociales y envia un mensaje para reclamar tu premio 💀🎃');
                     }
                     
                     setTimeout(() => {
@@ -772,15 +725,13 @@
                     border-radius: 10px;
                     font-weight: bold;
                     z-index: 1000;
-                    animation: fadeInOut 2s ease;
+                    animation: fadeInOut 5s ease;
                 `;
                 
                 document.body.appendChild(message);
                 
-                setTimeout(() => message.remove(), 2000);
+                setTimeout(() => message.remove(), 6000);
             }
-            
-            // Add fadeInOut animation
             const style = document.createElement('style');
             style.textContent = `
                 @keyframes fadeInOut {
