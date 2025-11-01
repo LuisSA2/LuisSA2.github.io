@@ -22,7 +22,6 @@
         .fab, .fas {
             font-family: system-ui, -apple-system, sans-serif;
         }
-        
         :root {
             --primary-color: #ff6b35;
             --secondary-color: #ffa500;
@@ -32,20 +31,17 @@
             --text-light: #ffffff;
             --text-gray: #d4a574;
         }
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
         body {
             font-family: 'Georgia', serif;
             background: var(--dark-bg);
             color: var(--text-light);
             overflow-x: hidden;
         }
-        
         .orbitron {
             font-family: 'Courier New', monospace;
         }
@@ -62,7 +58,6 @@
                 linear-gradient(135deg, #1a0500, #2d0a0a, #1a0500);
             z-index: -2;
         }
-        
         .spiderweb-grid {
             position: fixed;
             top: 0;
@@ -76,7 +71,6 @@
             animation: web-drift 15s linear infinite;
             z-index: -1;
         }
-        
         @keyframes web-drift {
             0% { transform: translate(0, 0) rotate(0deg); }
             100% { transform: translate(40px, 40px) rotate(5deg); }
@@ -90,7 +84,6 @@
             border-bottom: 3px solid var(--primary-color);
             box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
         }
-        
         .logo-text {
             font-size: 3rem;
             font-weight: 900;
@@ -100,7 +93,6 @@
             text-shadow: 0 0 30px rgba(255, 107, 53, 0.6);
             animation: halloween-glow 3s ease-in-out infinite alternate;
         }
-        
         @keyframes halloween-glow {
             from { 
                 text-shadow: 0 0 30px rgba(255, 107, 53, 0.6),
@@ -111,7 +103,6 @@
                            0 0 100px rgba(255, 107, 53, 0.6);
             }
         }
-        
         .tagline {
             font-size: 1.2rem;
             color: var(--text-gray);
@@ -119,13 +110,11 @@
             letter-spacing: 2px;
             font-style: italic;
         }
-
         .services-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 3rem 1rem;
         }
-        
         .section-title {
             text-align: center;
             font-size: 2.5rem;
@@ -136,11 +125,9 @@
             -webkit-text-fill-color: transparent;
             text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
         }
-        
         .service-category {
             margin-bottom: 4rem;
         }
-        
         .category-title {
             font-size: 1.8rem;
             font-weight: 700;
@@ -151,25 +138,21 @@
             gap: 1rem;
             text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
         }
-        
         .category-icon {
             font-size: 2rem;
             animation: spooky-float 4s ease-in-out infinite;
         }
-        
         @keyframes spooky-float {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             25% { transform: translateY(-5px) rotate(2deg); }
             50% { transform: translateY(-10px) rotate(0deg); }
             75% { transform: translateY(-5px) rotate(-2deg); }
         }
-        
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
         .service-card {
             background: linear-gradient(135deg, var(--card-bg), rgba(45, 10, 10, 0.8));
             border: 2px solid rgba(255, 107, 53, 0.4);
@@ -181,7 +164,6 @@
             backdrop-filter: blur(5px);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
-        
         .service-card::before {
             content: '';
             position: absolute;
@@ -195,36 +177,30 @@
             z-index: -1;
             transition: opacity 0.3s ease;
         }
-        
         .service-card:hover::before {
             opacity: 1;
-        }
-        
+        } 
         .service-card:hover {
             transform: translateY(-5px) scale(1.02);
             box-shadow: 0 10px 40px rgba(255, 107, 53, 0.4);
         }
-        
         .service-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
             color: var(--secondary-color);
             filter: drop-shadow(0 0 10px rgba(255, 165, 0, 0.5));
         }
-        
         .service-title {
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
             color: var(--text-light);
         }
-        
         .service-description {
             color: var(--text-gray);
             margin-bottom: 1.5rem;
             line-height: 1.6;
         }
-        
         .service-price {
             font-size: 1.8rem;
             font-weight: 700;
@@ -244,18 +220,15 @@
             position: relative;
             overflow: hidden;
         }
-        
         .btn-primary {
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             color: var(--text-light);
             box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
         }
-        
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(255, 107, 53, 0.5);
         }
-        
         .btn-social {
             background: rgba(255, 255, 255, 0.1);
             color: var(--text-light);
@@ -263,7 +236,6 @@
             padding: 0.6rem 1.5rem;
             margin: 0 0.5rem;
         }
-        
         .btn-social:hover {
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
@@ -276,11 +248,9 @@
             text-align: center;
             margin-top: 4rem;
         }
-        
         .social-links {
             margin-bottom: 1.5rem;
         }
-        
         .footer-text {
             color: var(--text-gray);
             font-size: 0.9rem;
@@ -296,42 +266,36 @@
             pointer-events: auto;
             box-shadow: 0 0 5px rgba(255, 107, 53, 0.1);
         }
-        
         .hidden-skeleton:hover {
             opacity: 1;
             transform: scale(1.1);
             filter: blur(0px);
             box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
         }
-        
         .skeleton-1 {
             top: -5px;
             right: -10px;
             transform: rotate(-8deg);
             opacity: 0.6;
         }
-        
         .skeleton-2 {
             top: -15px;
             right: 20px;
             transform: rotate(12deg);
             opacity: 0.6;
         }
-        
         .skeleton-3 {
             top: -5px;
             right: -15px;
             transform: rotate(-3deg);
             opacity: 0.6;
         }
-        
         .skeleton-4 {
             bottom: -15px;
             left: 20px;
             transform: rotate(8deg);
             opacity: 0.6;
         }
-        
         .skeleton-5 {
             bottom: -5px;
             right: -20px;
@@ -341,22 +305,17 @@
         @media (max-width: 768px) {
             .logo-text {
                 font-size: 2rem;
-            }
-            
+            }   
             .section-title {
                 font-size: 2rem;
             }
-            
             .services-grid {
                 grid-template-columns: 1fr;
             }
-            
             .hidden-pumpkin {
                 font-size: 1rem;
             }
         }
-        
-        /* Halloween Effects */
         .pulse {
             animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
@@ -376,52 +335,44 @@
             opacity: 0.7;
             pointer-events: none;
         }
-        
         .ghost-1 {
             top: 20%;
             left: 10%;
             animation: ghost-float 6s ease-in-out infinite;
         }
-        
         .ghost-2 {
             top: 60%;
             right: 15%;
             animation: ghost-float 8s ease-in-out infinite reverse;
         }
-        
         .witch-hat {
             top: 10%;
             right: 8%;
             font-size: 2rem;
             animation: witch-hover 12s ease-in-out infinite;
         }
-        
         .spider {
             bottom: 15%;
             left: 5%;
             font-size: 1.2rem;
             animation: spider-crawl 15s linear infinite;
         }
-        
         .candy {
             top: 30%;
             right: 25%;
             font-size: 1rem;
             animation: candy-bounce 4s ease-in-out infinite;
         }
-        
         @keyframes ghost-float {
             0%, 100% { transform: translateY(0px) translateX(0px); }
             25% { transform: translateY(-20px) translateX(10px); }
             50% { transform: translateY(-10px) translateX(-10px); }
             75% { transform: translateY(-25px) translateX(5px); }
         }
-        
         @keyframes witch-hover {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-15px) rotate(5deg); }
         }
-        
         @keyframes spider-crawl {
             0% { transform: translateX(0px) rotate(0deg); }
             25% { transform: translateX(20px) rotate(10deg); }
@@ -429,7 +380,6 @@
             75% { transform: translateX(15px) rotate(8deg); }
             100% { transform: translateX(0px) rotate(0deg); }
         }
-        
         @keyframes candy-bounce {
             0%, 100% { transform: translateY(0px) scale(1); }
             50% { transform: translateY(-10px) scale(1.1); }
@@ -440,7 +390,6 @@
             animation: fly 10s linear infinite;
             z-index: 5;
         }
-        
         @keyframes fly {
             0% {
                 left: -50px;
@@ -482,7 +431,6 @@
     </header>
     <main class="services-container">
         <h2 class="section-title orbitron">Nuestros Servicios</h2>
-
         <section class="service-category">
             <h3 class="category-title">
                 <i class="fas fa-certificate category-icon"></i>
@@ -496,20 +444,18 @@
                     <p class="service-description">Licencia temporal de Microsoft Office . Perfecta para proyectos cortos y necesidades específicas.</p>
                     <div class="service-price">$8 USD</div>
                     <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-shopping-cart"></i> Solicitar Ahora
+                        <i class="fas fa-shopping-cart"></i> Solicitar Servicio
                     </a>
                 </div>
-                
                 <div class="service-card">
                     <i class="fas fa-file-word service-icon"></i>
                     <h4 class="service-title">Microsoft Office Permanente</h4>
                     <p class="service-description">Licencia permanente de Microsoft Office  Acceso de por vida a todas las aplicaciones y actualizaciones.</p>
                     <div class="service-price">$12 USD</div>
                     <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-shopping-cart"></i> Solicitar Ahora
+                        <i class="fas fa-shopping-cart"></i> Solicitar Servicio
                     </a>
                 </div>
-               
                 <div class="service-card">
  <div class="hidden-skeleton skeleton-6" title="¡Te encontré!">💀</div>
                     <i class="fas fa-windows service-icon"></i>
@@ -517,54 +463,49 @@
                     <p class="service-description">Licencias originales de Windows 10 y 11 Pro. Activación garantizada y soporte técnico incluido.</p>
                     <div class="service-price">7$</div>
                     <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-shopping-cart"></i> Solicitar Ahora
+                        <i class="fas fa-shopping-cart"></i> Solicitar Servicio
                     </a>
                 </div>
             </div>
         </section>
-
         <section class="service-category">
             <h3 class="category-title">
                 <i class="fas fa-microchip category-icon"></i>
                 Servicios de Hardware
             </h3>
-            
             <div class="services-grid">
                 <div class="service-card">
 <div class="hidden-skeleton skeleton-3" title="¡Te encontré!">💀</div>
                     <i class="fas fa-desktop service-icon"></i>
                     <h4 class="service-title">Ensamblaje de PC</h4>
-                    <p class="service-description">Ensamblaje profesional de computadoras de escritorio según tus necesidades y presupuesto. Optimización de rendimiento garantizada.</p>
-                    <div class="service-price">Desde $15 USD</div>
+                    <p class="service-description">Ensamblaje profesional de computadoras de escritorio según tus necesidades y presupuesto. Optimización de rendimiento garantizada y activacion de licencias de office y windows gratis al nnsamblar la PC con nosotros.</p>
+                    <div class="service-price">Desde $17 USD</div>
                     <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-primary" target="_blank">
                         <i class="fas fa-tools"></i> Solicitar Servicio
                     </a>
-                </div>
-                
+                </div>            
                 <div class="service-card">
                     <div class="hidden-skeleton skeleton-4" title="¡Feliz Halloween!">💀</div>
                     <i class="fas fa-laptop service-icon"></i>
                     <h4 class="service-title">Mantenimiento de Laptop</h4>
                     <p class="service-description">Mantenimiento completo y reparación de laptops. Limpieza interna, cambio de pasta térmica y optimización de sistema.</p>
-                    <div class="service-price">Desde $20 USD</div>
+                    <div class="service-price">Desde $10 USD</div>
                     <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-primary" target="_blank">
                         <i class="fas fa-tools"></i> Solicitar Servicio
                     </a>
-                </div>
-                
+                </div>              
                 <div class="service-card">
 <div class="hidden-skeleton skeleton-7" title="¡Último esqueleto!">💀</div>
                     <i class="fas fa-desktop service-icon"></i>
                     <h4 class="service-title">Mantenimiento de PC</h4>
-                    <p class="service-description">Diagnóstico y mantenimiento de computadoras de escritorio. Eliminación de virus, optimización y actualización de componentes.</p>
-                    <div class="service-price">Desde $15 USD</div>
+                    <p class="service-description">Diagnóstico y mantenimiento de computadoras de escritorio. Eliminación de virus, optimización y actualización de componentes y revision de componentes dañados.</p>
+                    <div class="service-price">Desde $12 USD</div>
                     <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-primary" target="_blank">
                         <i class="fas fa-tools"></i> Solicitar Servicio
                     </a>
                 </div>
             </div>
-        </section>
-        
+        </section>    
         <section class="service-category">
             <h3 class="category-title">
                 <i class="fas fa-cogs category-icon"></i>
@@ -577,25 +518,22 @@
                     <p class="service-description">Instalación y configuración de antivirus premium. Protección completa contra malware y amenazas digitales.</p>
                     <div class="service-price">Desde $9 USD</div>
                     <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-shield-alt"></i> Solicitar Ahora
+                        <i class="fas fa-shield-alt"></i> Solicitar Servicio
                     </a>
-                </div>
-                
+                </div>               
                 <div class="service-card">
                     <i class="fas fa-database service-icon"></i>
                     <h4 class="service-title">Recuperación de Datos</h4>
-                    <p class="service-description">Recuperación profesional de datos de discos duros dañados, USB y tarjetas de memoria.</p>
+                    <p class="service-description">Recuperación profesional de datos de discos duros formateados, USB.</p>
                     <div class="service-price">Desde $5 USD</div>
                     <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-database"></i> Solicitar Ahora
+                        <i class="fas fa-database"></i> Solicitar Servicio
                     </a>
-                </div>
-           
+                </div>         
                 </div>
             </div>
         </section>
-    </main>
-    
+    </main>    
     <footer class="footer">
         <div class="social-links">
             <a href="https://www.facebook.com/profile.php?id=61581008015008" class="btn btn-social" target="_blank">
@@ -605,22 +543,19 @@
                 <i class="fab fa-instagram"></i> Instagram
             </a>
         </div>
-        <p class="footer-text">© 2025 ByteFix Streme - Todos los derechos reservados</p>
+        <p class="footer-text">© 2025 ByteFix Streme⇯ - Todos los derechos reservados</p>
         <p class="footer-text">Soluciones tecnológicas con calidad y confianza</p>
         <p class="footer-text">🎃 Feliz Halloween 🎃</p>
 <p class="footer-text">Encuentra los 5 esqueletos escondidos por toda la pagina y al encontrar el 4 esqueleto graba el momento en el que encuentras el 5 esqueleto y envianos el video a cualquiera de nuestras cuentas para canjear el premio</p>
-
-        <p class="footer-text">௹ Dueño - Luis Sanchez</p>
+        <p class="footer-text">௹ Dueño Principal - Luis Sanchez</p>
         <p class="footer-text">௹ Dueño - Hector Ponton</p>
     </footer>
-    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
-            
             const observer = new IntersectionObserver(function(entries) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -639,7 +574,6 @@
                 button.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateY(-2px) scale(1.05)';
                 });
-                
                 button.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0) scale(1)';
                 });
@@ -652,20 +586,15 @@
                 particle.style.background = 'rgba(255, 107, 53, 0.8)';
                 particle.style.borderRadius = '50%';
                 particle.style.pointerEvents = 'none';
-                particle.style.zIndex = '1';
-                
+                particle.style.zIndex = '1';  
                 const startX = Math.random() * window.innerWidth;
-                const startY = Math.random() * window.innerHeight;
-                
+                const startY = Math.random() * window.innerHeight; 
                 particle.style.left = startX + 'px';
                 particle.style.top = startY + 'px';
-                
                 document.body.appendChild(particle);
-                
                 const duration = Math.random() * 4000 + 2000;
                 const endX = startX + (Math.random() - 0.5) * 300;
-                const endY = startY + (Math.random() - 0.5) * 300;
-                
+                const endY = startY + (Math.random() - 0.5) * 300; 
                 particle.animate([
                     { 
                         transform: `translate(0, 0) scale(1)`,
@@ -686,7 +615,6 @@
                 }).onfinish = () => particle.remove();
             }
             setInterval(createHalloweenParticle, 600);
-
             let skeletonsFound = 0;
             document.querySelectorAll('.hidden-skeleton').forEach(skeleton => {
                 skeleton.addEventListener('click', function() {
@@ -703,14 +631,12 @@
                         showMessage('Sigue buscando 💀');
                     } else if (skeletonsFound === 5) {
                         showMessage('¡Felicitaciones! Encontraste todos los esqueletos!Ve a nuestras redes sociales y envia un mensaje para reclamar tu premio 💀🎃');
-                    }
-                    
+                    }                
                     setTimeout(() => {
                         this.style.visibility = 'hidden';
                     }, 300);
                 });
-            });
-            
+            });            
             function showMessage(text) {
                 const message = document.createElement('div');
                 message.textContent = text;
@@ -727,9 +653,7 @@
                     z-index: 1000;
                     animation: fadeInOut 5s ease;
                 `;
-                
-                document.body.appendChild(message);
-                
+                document.body.appendChild(message);            
                 setTimeout(() => message.remove(), 6000);
             }
             const style = document.createElement('style');
